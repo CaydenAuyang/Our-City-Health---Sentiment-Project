@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OurCityHealth — moved</title>
+  <script>
+    /* Catch-all redirect: take whatever path the visitor requested under the
+       old repo name and forward it to the same path under the new repo. */
+    (function () {
+      var oldPrefix = "/Our-City-Health---Sentiment-Project";
+      var newPrefix = "/OurCityHealth";
+      var path = window.location.pathname;
+      if (path.indexOf(oldPrefix) === 0) {
+        path = newPrefix + path.slice(oldPrefix.length);
+      } else {
+        path = newPrefix + "/";
+      }
+      var target = window.location.protocol + "//" + window.location.host + path
+                 + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="1; url=https://caydenauyang.github.io/OurCityHealth/" />
+  <style>
+    body{background:#0A0A0F;color:#A1A1AA;font-family:system-ui,sans-serif;margin:0;height:100vh;display:grid;place-items:center;text-align:center;padding:20px;}
+    a{color:#3B82F6;}
+  </style>
+</head>
+<body>
+  <div>
+    <p style="font-size:18px;color:#fff;margin-bottom:8px;">OurCityHealth has moved.</p>
+    <p>Redirecting you to <a href="https://caydenauyang.github.io/OurCityHealth/">the new URL</a>…</p>
+  </div>
+</body>
+</html>
